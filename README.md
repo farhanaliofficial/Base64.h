@@ -1,6 +1,14 @@
 # Base64.h
 This is a C++ header file that provides functions for encoding and decoding strings using the Base64 encoding scheme.
 
+# Features
+- Lightweight and easy to use
+- Provides both encoding and decoding functionality
+- Compatible with a wide range of platforms and compilers
+
+# Installation
+To install "Base64.h", simply include the header file in your project and use the provided functions as needed. No additional libraries or dependencies are required.
+
 # Functions
 `bool is_base64(unsigned char c)`
 Checks whether a given character is a valid Base64 character or not.
@@ -52,3 +60,8 @@ int main()
 Encoded: SGVsbG8sIFdvcmxkIQ==
 Decoded: Hello, World!
 ```
+# Note
+> This header file may not work properly or gives Errors.
+
+# Support
+If you encounter any issues or have any questions about "Base64.h", please feel free to contact us or open an issue on GitHub. We are always
