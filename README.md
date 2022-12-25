@@ -9,3 +9,14 @@ Checks whether a given character is a valid Base64 character or not.
 - `c`: The character to be checked.
 
 **Return value**
+Returns `true` if the character is a valid Base64 character (i.e., an uppercase or lowercase letter, a digit, or '+' or '/') and `false` otherwise.
+
+`string base64_encode(const string &input)`
+Encodes a string using the Base64 encoding scheme.
+
+**Parameters**
+- `input`: The string to be encoded.
+
+**Return value**
+Returns the Base64-encoded version of the input string.
+
