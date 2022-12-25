@@ -20,3 +20,35 @@ Encodes a string using the Base64 encoding scheme.
 **Return value**<br>
 Returns the Base64-encoded version of the input string.
 
+`string base64_decode(const string &input)`<br>
+Decodes a Base64-encoded string.
+
+**Parameters**
+- `input`: The Base64-encoded string to be decoded.
+
+**Return value**<br>
+Returns the decoded version of the input string.
+
+# Example
+```
+#include "base64.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string input = "Hello, World!";
+    string encoded = base64_encode(input);
+    cout << "Encoded: " << encoded << endl;
+    string decoded = base64_decode(encoded);
+    cout << "Decoded: " << decoded << endl;
+    return 0;
+}
+```
+
+**Output:**
+```
+Encoded: SGVsbG8sIFdvcmxkIQ==
+Decoded: Hello, World!
+```
