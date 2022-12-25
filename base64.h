@@ -1,6 +1,8 @@
 /*
   This header file is licensed under the MIT License.
   Copyright (c) 2022 Farhan Ali
+  
+  Github: @farhanaliofficial
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -28,19 +30,26 @@
 
 using namespace std;
 
+//Valid Base64 Characters
 const char base64_chars[] = 
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     "abcdefghijklmnopqrstuvwxyz"
     "0123456789+/";
 
+//Return true of given character is valid Base64 Character
 bool is_base64(unsigned char c);
 
+//Return Encoded Base64 String
 string base64_encode(const string & input);
 
+//Return Decoded Base64 String
 string base64_decode(const string & input);
 
 #endif
-
+/*
+GitHub: @farhanalioffical
+Free to use
+*/
 bool is_base64(unsigned char c)
 {
     return (isalnum(c) || (c == '+') || (c == '/'));
