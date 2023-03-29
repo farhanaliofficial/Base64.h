@@ -38,7 +38,7 @@ Decodes a Base64-encoded string.
 Returns the decoded version of the input string.
 
 # Example
-```
+```c
 #include "base64.h"
 #include <iostream>
 
